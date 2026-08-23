@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova 2026 | GDG</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f19;
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #111827;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #8ab4f8;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #111827, #172554);
+    }
+
+    .hero p {
+      color: #8ab4f8;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #cbd5e1;
+      max-width: 650px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #4285f4;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #5b9bf8;
+    }
+
+    section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #111827;
+      padding: 30px;
+      border-radius: 14px;
+      width: 280px;
+      border: 1px solid #263247;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #4285f4;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #8ab4f8;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">GDG × TechNova</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#sessions">Sessions</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p>GDG PRESENTS</p>
+
+    <h1>TechNova 2026</h1>
+
+    <h2>
+      A student-focused tech event exploring the ideas,
+      technologies and communities shaping tomorrow.
+    </h2>
+
+    <a class="btn" href="#sessions">Explore Sessions</a>
+  </section>
+
+  <section id="about">
+    <h2>Why TechNova?</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Learn</h3>
+        <p>Explore practical technologies through beginner-friendly sessions and workshops.</p>
+      </div>
+
+      <div class="card">
+        <h3>Build</h3>
+        <p>Turn ideas into projects while learning from developers and fellow students.</p>
+      </div>
+
+      <div class="card">
+        <h3>Connect</h3>
+        <p>Meet people who are curious about technology and become part of the community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sessions">
+    <h2>Featured Sessions</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Build your first responsive website using HTML, CSS and JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI & Innovation</h3>
+        <p>Discover how modern AI tools are changing the way we build technology.</p>
+      </div>
+
+      <div class="card">
+        <h3>Open Source</h3>
+        <p>Learn how developers collaborate, contribute and build projects together.</p>
+      </div>
+    </div>
+
+    <a class="btn" href="https://forms.google.com" target="_blank">
+      Register Now
+    </a>
+  </section>
+
+  <section id="contact">
+    <h2>Join the Community</h2>
+    <p>Have questions or want to collaborate? We'd love to hear from you.</p>
+  </section>
+
+  <footer>
+    © 2026 GDG TechNova · Built by a student developer
+  </footer>
+
+</body>
+</html>
